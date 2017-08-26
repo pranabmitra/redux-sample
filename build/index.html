@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Redux- TODO</title>
+    <style>
+      .add-todo-form {
+        margin: 10px 0;
+      }
+      .todo-list ul {
+        border: 1px solid grey;
+      }
+
+      .todo-list ul li {
+        padding: 8px 4px;
+        display: table;
+      }
+
+      .todo-list ul li:hover {
+        background-color: #e8e8e8;
+      }
+
+      ul li div {
+        float: left;
+        margin-right: 10px;
+      }
+    </style>
+</head>
+<body>
+  <h4>This is a simple redux todo app</h4>
+  <div class="add-todo-form">
+    <input type="text" name="text" />
+    <input type="hidden" name="id" />
+    <button id="addTodoBtn">Add</button>
+  </div>
+  <hr />
+
+  <div class="todo-list">
+    <ul id="todoListContainer"></ul>
+  </div>
+
+
+  <script src="js/main.min.js"></script>
+</body>
+</html>
